@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+        <a href="index.html"><img src="images/facebook_profile_image.png" alt="Llogo for Online Movies"></a>
+        </header>
+        <nav class="nav1">
+            <div id="ul-block">
+                <ul id="menu">
+                    <li> <a  href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" >Category</button>
+                            <div class="dropdown-content">
+                           <table>
+                               <tr>
+                                   <td> <a href="action.html">Action</a></td>
+                                   <td> <a href="adventure.html">Adventure</a></td>
+                                   <td> <a href="animation.html">Animation</a></td>
+                                   <td> <a href="comedy.html">Comedy</a></td>
+                               </tr>
+                               <tr>
+                                   <td> <a href="drama.html">Drama</a></td>
+                                   <td> <a href="fantasy.html">Fantasy</a></td>
+                                   <td> <a href="heist.html">Heist</a></td>
+                                   <td> <a href="horror_fiction.html">Horror fiction</a></td>
+                               </tr>
+                               <tr>
+                                <td> <a href="mystery.html">Mystery</a></td>
+                                <td> <a href="romance.html">Romance</a></td>
+                                <td> <a href="science_fiction.html">Science fiction</a></td>
+                                <td> <a href="superhero.html">Superhero</a></td>
+                            </tr>
+                            <tr>
+                                <td> <a href="thriller.html">Thriller</a></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                           </table>
+                            </div>
+                          </div>
+                    </li>
+                    <li> <a  href="movies.html">Movies</a></li>
+                    <li>  <a  href="series.html">TV Shows</a></li>
+                    <li>  <a class="a_special" href="news.html">News</a></li>
+                    <li id="searchbox">
+                         <input type="text" placeholder="Search">
+                         <button>search</button>
+                     </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+        <h1 class="news_font">Questionnarie</h1>
+
+            <form >
+                <div style="margin-right: 600px;">
+                    <label for="fname" class="forms" >First name:</label>
+                     <input type="text" id="fname" name="fname">
+                </div>
+                <br>
+                <div style="margin-right: 600px;">
+                    <label for="lname" class="forms" >Last name:</label>
+                     <input type="text" id="lname" name="lname">
+                </div>
+                <br>
+                <div style="margin-right: 554px;">
+                    <label for="fav_movie" class="forms" >Favourite movie:</label>
+                     <input type="text" id="fav_movie" name="fav_movie">
+                </div>
+                <br>
+                <p class="forms" style="margin-right: 585px;">How usually do you watch movies: </p>
+         
+                <input type="radio" id="everyday" name="how_usually" value="everyday">
+                  <label for="everyday" class="forms" style="margin-right: 734px;">Everyday</label><br>
+           
+                <input type="radio" id="every 2-3 days" name="how_usually" value="every 2-3 days">
+                  <label for="every 2-3 days" class="forms" style="margin-right: 690px;">Every 2-3 days</label><br>
+            
+                  <input type="radio" id="everyweek" name="how_usually" value="everyweek">
+                  <label for="everyweek" class="forms" style="margin-right: 730px;">Everyweek</label><br>
+    
+
+                <input type="radio" id="every once in a while" name="how_usually" value="every once in a while">
+                  <label for="every once in a while" class="forms" style="margin-right: 640px;">Every once in a while</label><br>
+            
+               
+                <input type="radio" id="rarely" name="how_usually" value="rarely">
+                  <label for="rarely" class="forms" style="margin-right: 758px;">Rarely</label><br>
+              
+
+                <input type="radio" id="never" name="how_usually" value="never">
+                  <label for="never" class="forms" style="margin-right: 761px;">Never</label><br>
+               
+               
+                <p class="forms" style="margin-right: 600px;">What type of movies do you like: </p>
+         
+                    <input type="checkbox" id="action" name="fav_movie_type" value="Action">
+                      <label for="action" class="forms" style="margin-right: 758px;">Action</label><br>
+               
+                    <input type="checkbox" id="adventure" name="fav_movie_type" value="Adventure">
+                      <label for="adventure" class="forms" style="margin-right: 727px;">Adventure</label><br>
+                
+                      <input type="checkbox" id="animation" name="fav_movie_type" value="Animation">
+                      <label for="animation" class="forms" style="margin-right: 738px;">Animation</label><br>
+
+                        <input type="checkbox" id="comedy" name="fav_movie_type" value="Comdey">
+                          <label for="comedy" class="forms" style="margin-right: 742px;">Comedy</label><br>
+                    
+                        <input type="checkbox" id="drama" name="fav_movie_type" value="Drama">
+                          <label for="drama" class="forms" style="margin-right: 755px;">Drama</label><br>
+                  
+                          <input type="checkbox" id="fantasy" name="fav_movie_type" value="Fantasy">
+                          <label for="fantasy" class="forms" style="margin-right: 753px;">Fantasy</label><br>
+                    
+                          <input type="checkbox" id="heist" name="fav_movie_type" value="Heist">
+                          <label for="heist" class="forms" style="margin-right: 777px;">Heist</label><br>
+
+                          <input type="checkbox" id="horror fiction" name="fav_movie_type" value="Horror fiction">
+                          <label for="horror fiction" class="forms" style="margin-right: 717px;">Horror fiction</label><br>
+                          
+                          <input type="checkbox" id="mystery" name="fav_movie_type" value="Mystery">
+                          <label for="mystery" class="forms" style="margin-right: 763px;">Mystery</label><br>
+                   
+                          <input type="checkbox" id="romance" name="fav_movie_type" value="Romance">
+                          <label for="romance" class="forms" style="margin-right: 740px;">Romance</label><br>
+
+                          <input type="checkbox" id="science fiction" name="fav_movie_type" value="Science fiction">
+                          <label for="science fiction" class="forms" style="margin-right: 704px;">Science fiction</label><br>
+
+                          <input type="checkbox" id="superhero" name="fav_movie_type" value="Superhero">
+                          <label for="superhero" class="forms" style="margin-right: 735px;">Superhero</label><br>
+
+                          <input type="checkbox" id="thriller" name="fav_movie_type" value="Thriller">
+                          <label for="thriller" class="forms" style="margin-right: 763px;">Thriller</label><br>
+                        
+                        <br>
+                        <div style="margin-right: 780px;">
+                            <input type="submit" value="Submit">
+                        </div>
+
+            </form> 
+            
+            
+        </main>   
+        
+        <footer>
+            <p>"Online movies" the best free online movies website. <br> Owners: Arif Berisha, Albert Grajçevci and Alban Murtezaj - Copyright 2021©</p>
+            <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a>
+        </footer>
+    </div>
+</body>
+
+</html>
