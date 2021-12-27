@@ -1,0 +1,376 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: #273035;
+    background-image: url(images/cover5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+.body{
+    background-color: #273035;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:fixed;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+}
+header{
+    height: 118px;
+    text-align: center;
+}
+nav {
+background-color: rgba(0, 0, 0, 0.571);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav1{
+    padding-left: 7px;
+width: 850px;
+border-radius: 0%;
+}
+.nav1 a:hover{
+    color: rgb(245, 18, 18);
+    width: 70PX;
+    height: 50PX;
+}
+.nav1 button:hover{
+    color: rgb(245, 18, 18);
+}
+.nav2{
+    width: 140px;
+    border-radius: 7%;
+    padding-left: 20px;
+    }
+.nav3{
+    width: 50px;
+    border-radius: 7%;
+    }
+    #searchbox input{
+    width: 170px;
+    border: 2px solid rgb(198, 198, 198);
+    font-size: 18px;
+    padding: 12px;
+    background: transparent;
+    color: rgb(198, 198, 198);
+    border-right: 0px;
+    }
+    #searchbox button{
+        border: 2px solid rgb(198, 198, 198);
+        font-size: 18px;
+        padding: 12px;
+        width: 100px;
+        background:rgba(191, 45, 45, 0.699);
+        color: rgb(198, 198, 198);
+        float:right;
+        border-left: 0px;
+        margin-right: 15.3px;
+    }
+    #searchbox button:hover{
+        opacity: .8;
+    }
+    #searchbox input:hover{
+        opacity: .8;
+    }
+main{
+    height: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-left: 9.5px;
+    padding-right: 25px;
+    background-color:rgba(0, 0, 0, 0.571);
+    border-radius: 5%;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.571);
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+footer p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(198, 198, 198);
+}
+footer a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: rgb(198, 198, 198);
+}
+header img{
+    width: 130px;
+    height: 130px;
+    border-radius: 20%;
+}
+
+p{
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.a_special{
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: rgba(191, 45, 45, 0.374);
+}
+nav a {
+    color: rgb(198, 198, 198);
+    font-size: 24px;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.moviebox {
+    width: 300px;
+    height: 300px;
+    border-radius: 7%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.font{
+    color: rgb(198, 198, 198);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+}
+td div
+{
+padding-top: 30px;
+}
+tr td a
+{
+padding-right: 5px;
+padding-left: 5px;
+  color: aquamarine;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;  
+    text-decoration: none;
+}
+
+main h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 0px;
+}
+
+td img:hover{
+   width: 350px;
+   height: 350px;
+   transition: 0.3s ;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*drop list te category*/
+ul#menu li {
+    display:inline;
+}
+.dropbtn {
+    /*button design*/
+    background-color: #04aa6d00;
+    padding: 0px;
+    font-size: 22px;
+    border: none;
+    color: rgb(198, 198, 198);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.571);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: rgb(198, 198, 198);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover { background-color:rgba(0, 0, 0, 0);}
+  .dropdown:hover .dropdown-content {display: block;}
+ 
+.calendar_font{
+
+    font-size: 25px;
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+}
+.calendar_box{
+    border: 2px solid black;
+    outline: rgba(248, 236, 188, 0.562) solid 2px;
+    width: 100px;
+    height: 75px;
+    border-radius: 5%;
+    background: linear-gradient(rgba(245, 223, 137, 0.562),rgba(255, 248, 220,0.562));
+}
+.calendar_box:hover{
+    animation: rotateX 5s;
+}
+.calendar_box_colspan{
+    height: 75px;
+    border-radius: 5%;
+    border: 2px solid black;
+    outline: rgba(248, 236, 188, 0.562) solid 2px;
+    background: linear-gradient(rgba(245, 223, 137, 0.562),rgba(255, 248, 220,0.562));
+}
+.calendar_box_colspan:hover{
+    animation: rotateX 5s;
+}
+.calendar_box_special{
+    width: 100px;
+    height: 75px;
+    border-radius: 5%;
+    border: 2px solid black;
+    outline: rgba(248, 236, 188, 0.562) solid 2px;
+    background: radial-gradient(rgba(245, 139, 139, 0.89),rgba(117, 37, 37, 0.89));
+
+}
+.calendar_box_special:hover{
+    animation: rotateX 5s;
+}
+.calendar_font_special{
+    font-size: 25px;
+    color: rgb(198, 198, 198);
+    text-decoration: none;
+}
+.news_imgbox{
+    height: 450px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+.news_font{
+font-size: 30px;
+color: rgb(198, 198, 198);
+}
+.news_p_font{
+    font-size: 20px;
+color: white;
+text-align: left;
+padding-left: 100px;
+padding-right: 100px;
+}
+div.anash{
+    display: inline-block;
+}
+.forms{
+    color: rgb(198, 198, 198);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Pushster/Pushster-Regular.ttf);
+  }
+  
+  .font_face {
+    font-family: myFirstFont;
+    font-size: 18px;
+}
+#scale:hover{
+    transform: scale(110%);
+}
+#skew:hover{
+    transform: skew(345deg);
+}
+#translate:hover{
+    transform: translate(0px,20px);
+}
+#rotate:hover{
+    transform: rotate(5deg);
+}
+@keyframes rotateX {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(360deg);
+    }
+  }
+  @keyframes rotateY {
+    0%,100% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(45deg);
+    }
+  }
+  @keyframes rotateZ {
+    0%, 50%, 100% {
+      transform: rotateZ(0deg);
+    }
+    25% {
+      transform: rotateZ(1deg);
+    }
+    75% {
+        transform: rotateZ(-1deg);
+    }
+
+  }
+  .december:hover{
+      animation: rotateY 1s;
+  }
+  .upcoming:hover{
+      animation: rotateZ 1s;
+  }
+#divcolumn{
+    column-count: 3;
+    column-gap: 25px;
+    column-rule: 5px outset rgb(198, 198, 198);
+}
+#resize{
+    max-width: 300px;
+    min-width: 275px;
+    resize: horizontal;
+    overflow: auto;
+}
+.movie{
+    width: auto;
+    height: 400px;
+    margin-left: 280px;
+    margin-top: 150px;
+}
+#div1, #div2, #div3 {
+    float: left;
+    width: 310px;
+    height: 150px;
+    margin-left: 5px;
+    padding: 10px;
+  }
