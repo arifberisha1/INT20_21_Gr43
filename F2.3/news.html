@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <div class="container ">
+        
+        <header >
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              
+              <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <a href="index.html"><img src="images/facebook_profile_image.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100px" height="125px" style="margin-left: 5px; margin-top: 10px;"></a>
+            </div>
+              
+              <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </header>
+        <br><br>
+        
+        <nav class="nav1">
+            <div id="ul-block">
+                <ul id="menu">
+                    <li> <a  href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" >Category</button>
+                            <div class="dropdown-content">
+                           <table>
+                               <tr>
+                                   <td> <a href="action.html">Action</a></td>
+                                   <td> <a href="adventure.html">Adventure</a></td>
+                                   <td> <a href="animation.html">Animation</a></td>
+                                   <td> <a href="comedy.html">Comedy</a></td>
+                               </tr>
+                               <tr>
+                                   <td> <a href="drama.html">Drama</a></td>
+                                   <td> <a href="fantasy.html">Fantasy</a></td>
+                                   <td> <a href="heist.html">Heist</a></td>
+                                   <td> <a href="horror_fiction.html">Horror fiction</a></td>
+                               </tr>
+                               <tr>
+                                <td> <a href="mystery.html">Mystery</a></td>
+                                <td> <a href="romance.html">Romance</a></td>
+                                <td> <a href="science_fiction.html">Science fiction</a></td>
+                                <td> <a href="superhero.html">Superhero</a></td>
+                            </tr>
+                            <tr>
+                                <td> <a href="thriller.html">Thriller</a></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                           </table>
+                            </div>
+                          </div>
+                    </li>
+                    <li> <a  href="movies.html">Movies</a></li>
+                    <li>  <a  href="series.html">TV Shows</a></li>
+                    <li>  <a class="a_special" href="news.html">News</a></li>
+                    <li id="searchbox">
+                         <input type="text" placeholder="Search">
+                         <button>search</button>
+                     </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <br>
+            <a href="news_upcomming.html"><div class="font" id="resize"  style="background-color: rgba(191, 45, 45, 0.699); border-radius: 5%; padding: 10px; border: 2px solid rgba(182, 109, 109, 0.89); width: 275px; margin-left: 344px;">Upcomming movies and Tv shows</div></a>
+<br><br>
+       
+           <a href="news_rednotice.html"> <img class="news_imgbox" src="movies_images/rednoticemoviepic.jpg" alt="Red notice"></a>
+            <h1 class="news_font">
+              <a href="news_rednotice.html">  Red Notice Surpasses Bird Box as Most-Watched Movie in Netflix History</a>
+            </h1>
+            <br>
+            <a href="news_spiderman.html"><img class="news_imgbox" src="news_img/spiderman.jpg" alt="Spider-man: No way home"></a>
+            <h1 class="news_font">
+              <a href="news_spiderman.html"> Spider-man: No way home</a>
+            </h1>
+            <br>
+            <a href="news_aquaman2.html"><img class="news_imgbox" src="news_img/aquaman2.jpg" alt="Aquaman 2"></a>
+            <h1 class="news_font">
+              <a href="news_aquaman2.html"> Aquaman2</a>
+            </h1>
+        </main>   
+        
+        <footer>
+            <p>"Online movies" the best free online movies website. <br> Owners: Arif Berisha, Albert Grajçevci and Alban Murtezaj - Copyright 2021©</p>
+            <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a>
+        </footer>
+    </div>
+</body>
+
+</html>

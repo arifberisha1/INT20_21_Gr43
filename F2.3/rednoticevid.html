@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Movies</title>
+    <link rel="stylesheet" href="style_movies.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body class="body" style="    background-image: url(movies_images/rednoticecover.jpg);">
+
+    <div class="container ">
+        
+        <header >
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              
+              <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <a href="index.html"><img src="images/facebook_profile_image.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100px" height="125px" style="margin-left: 5px; margin-top: 10px;"></a>
+            </div>
+              
+              <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </header>
+        <br><br>
+        
+        <nav class="nav1">
+            <div id="ul-block">
+                <ul id="menu">
+                    <li> <a  href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn" >Category</button>
+                            <div class="dropdown-content">
+                           <table>
+                               <tr>
+                                   <td> <a href="action.html">Action</a></td>
+                                   <td> <a href="adventure.html">Adventure</a></td>
+                                   <td> <a href="animation.html">Animation</a></td>
+                                   <td> <a href="comedy.html">Comedy</a></td>
+                               </tr>
+                               <tr>
+                                   <td> <a href="drama.html">Drama</a></td>
+                                   <td> <a href="fantasy.html">Fantasy</a></td>
+                                   <td> <a href="heist.html">Heist</a></td>
+                                   <td> <a href="horror_fiction.html">Horror fiction</a></td>
+                               </tr>
+                               <tr>
+                                <td> <a href="mystery.html">Mystery</a></td>
+                                <td> <a href="romance.html">Romance</a></td>
+                                <td> <a href="science_fiction.html">Science fiction</a></td>
+                                <td> <a href="superhero.html">Superhero</a></td>
+                            </tr>
+                            <tr>
+                                <td> <a href="thriller.html">Thriller</a></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                           </table>
+                            </div>
+                          </div>
+                    </li>
+                    <li> <a  href="movies.html">Movies</a></li>
+                    <li>  <a  href="series.html">TV Shows</a></li>
+                    <li>  <a  href="news.html">News</a></li>
+                    <li id="searchbox">
+                         <input type="text" placeholder="Search">
+                         <button>search</button>
+                     </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+       <main>
+        <video class="movie" controls>
+            <source src="videos/Red Notice 2021.mp4" type="video/mp4">
+           </video>
+        </main>
+        <footer>
+            <p class="p">"Online movies" the best free online movies website. <br> Owners: Arif Berisha, Albert Grajçevci and Alban Murtezaj - Copyright 2021©</p>
+            <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a>
+        </footer>
+    </div>
+</body>
+
+</html>
