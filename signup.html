@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+</head>
+
+<body>
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    
+    <div class="container ">
+
+        <header>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <a href="index.html"><img src="images/facebook_profile_image.png" draggable="true"
+                        ondragstart="drag(event)" id="drag" width="100px" height="125px"
+                        style="margin-left: 5px; margin-top: 10px;"></a>
+            </div>
+
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </header>
+        <br><br>
+
+        <nav class="nav1">
+            <div id="ul-block">
+                <ul id="menu">
+                    <li> <a class="a_special" href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Category</button>
+                            <div class="dropdown-content">
+                                <table>
+                                    <tr>
+                                        <td> <a href="action.html">Action</a></td>
+                                        <td> <a href="adventure.html">Adventure</a></td>
+                                        <td> <a href="animation.html">Animation</a></td>
+                                        <td> <a href="comedy.html">Comedy</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="drama.html">Drama</a></td>
+                                        <td> <a href="fantasy.html">Fantasy</a></td>
+                                        <td> <a href="heist.html">Heist</a></td>
+                                        <td> <a href="horror_fiction.html">Horror fiction</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="mystery.html">Mystery</a></td>
+                                        <td> <a href="romance.html">Romance</a></td>
+                                        <td> <a href="science_fiction.html">Science fiction</a></td>
+                                        <td> <a href="superhero.html">Superhero</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="thriller.html">Thriller</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="movies.html">Movies</a></li>
+                    <li> <a href="series.html">TV Shows</a></li>
+                    <li> <a href="news.html">News</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><img src="images/more.png" alt="more" style="height: 50px; width: 50px;" class="more"></button>
+                            <div class="dropdown-content">
+                                <table>
+                                    <tr>
+                                        <td> <a href="action.html">Log<b style="opacity: 0;">_</b>In</a></td>
+                                    </tr> <tr>
+                                        <td> <a href="action.html">Sign<b style="opacity: 0;">_</b>Up</a></td>
+                                    </tr><tr>
+                                        <td> <a href="contactus.html">Contact<b style="opacity: 0;">_</b>us</a></td>
+                                    </tr><tr>
+                                        <td> <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a></td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        
+        
+        
+        <div class="searchbox">
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search" id="mysearch">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        </nav>
+
+        <main>
+            <br>
+            <div class="signin">
+                <div class="header">
+                    <h2>Create Account</h2>
+                </div> 
+                <form id="form" class="form">
+                    <div class="form-control">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="example123" id="username" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Email</label>
+                        <input type="email" placeholder="example@example.com" id="email" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Password</label>
+                        <input type="password" placeholder="Password" id="password"/>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="username">Password check</label>
+                        <input type="password" placeholder="Password check" id="password2"/>
+                        <small>Error message</small>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p class="font_face">"Online movies" the best free online movies website. </p>
+            <address style="color:rgb(198, 198, 198);"> Owners: Arif Berisha, Albert Grajçevci and Alban Murtezaj -
+                Copyright 2021©</address><br>            <a href="questionnarie.html" target="_blank">Questionnarie</a>
+        </footer>
+    </div>
+    <script>
+        let progress = document.getElementById("progressbar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + '%';
+        }
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')
+         
+        }
+        const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const password2 = document.getElementById('password2');
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	checkInputs();
+});
+
+function checkInputs() {
+	// trim to remove the whitespaces
+	const usernameValue = username.value.trim();
+	const emailValue = email.value.trim();
+	const passwordValue = password.value.trim();
+	const password2Value = password2.value.trim();
+	
+	if(usernameValue === '') {
+		setErrorFor(username, 'Username cannot be blank');
+	} else {
+		setSuccessFor(username);
+	}
+	
+	if(emailValue === '') {
+		setErrorFor(email, 'Email cannot be blank');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+	} else {
+		setSuccessFor(email);
+	}
+	
+	if(passwordValue === '') {
+		setErrorFor(password, 'Password cannot be blank');
+	} else {
+		setSuccessFor(password);
+	}
+	
+	if(password2Value === '') {
+		setErrorFor(password2, 'Password2 cannot be blank');
+	} else if(passwordValue !== password2Value) {
+		setErrorFor(password2, 'Passwords does not match');
+	} else{
+		setSuccessFor(password2);
+	}
+}
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}
+	
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+    </script>
+</body>
+
+</html>
