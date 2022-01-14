@@ -1,0 +1,198 @@
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 750px;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    /* height: 100%; */
+}
+
+.contact_us{
+    position: relative;
+    min-width: 680px;
+    min-height: 480px;
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact_us .contactInfo{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: calc(100% - 80px);
+    background: rgb(191, 45, 45);
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.3);
+    border-radius: 2%;
+}
+
+.contact_us .contactInfo h2{
+    color: rgb(198, 198, 198);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact_us .contactInfo ul.info{
+position: relative;
+margin: 20px 0;
+}
+
+.contact_us .contactInfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.contact_us .contactInfo ul.info li span:nth-child(1){
+width: 30px;
+min-width: 30px;
+}
+
+.contact_us .contactInfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.contact_us .contactInfo ul.info li span:nth-child(2){
+    color: rgb(198, 198, 198);
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.contact_us .contactInfo ul.sci{
+    position: relative;
+    display: flex;
+
+}
+
+.contact_us .contactInfo ul.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.contact_us .contactInfo ul.sci li a{
+    text-decoration: none;
+}
+
+.contact_us .contactInfo ul.sci li a img{
+    filter: invert(1);
+}
+
+.contact_us .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: rgb(198, 198, 198);
+    /* background: rgba(0, 0, 0, 0.571); */
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+    border-radius: 2%;
+}
+
+.contact_us .contactForm h2{
+  color: rgb(191, 45, 45);
+  font-size: 24px;
+  font-weight: 500;  
+}
+
+.contact_us .contactForm .fromBox .inputBox input,
+.contact_us .contactForm .fromBox .inputBox textarea{
+    background: transparent;
+    font-family: myFirstFont;
+}
+
+.contact_us .contactForm .fromBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contact_us .contactForm .fromBox .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.contact_us .contactForm .fromBox .inputBox.w50{
+    width: 47%;
+}
+.contact_us .contactForm .fromBox .inputBox.w100{
+    width: 100%;
+
+}
+
+.contact_us .contactForm .fromBox .inputBox input{
+    width: 100%;
+    resize: none;
+}
+.contact_us .contactForm .fromBox .inputBox input,
+.contact_us .contactForm .fromBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+.contact_us .contactForm .fromBox .inputBox textarea{
+    height: 120px;
+}
+
+.contact_us .contactForm .fromBox .inputBox span{
+position: absolute;
+left: 0;
+padding: 5px 0;
+pointer-events: none;
+font-size: 18px;
+font-weight: 300;
+transition: 0.3s;
+}
+
+.contact_us .contactForm .fromBox .inputBox input:focus ~ span,
+.contact_us .contactForm .fromBox .inputBox input:valid ~ span,
+.contact_us .contactForm .fromBox .inputBox textarea:focus ~ span,
+.contact_us .contactForm .fromBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(191, 45, 45);
+    font-weight: 500;
+}
+
+.contact_us .contactForm .fromBox .inputBox input[type = "submit"]{
+    position: relative;
+    cursor: pointer;
+    background: rgb(191, 45, 45);
+    color: rgb(198, 198, 198);
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_us .contactForm .fromBox .inputBox input[type = "submit"]:hover{
+    background: rgb(196, 98, 98);
+}

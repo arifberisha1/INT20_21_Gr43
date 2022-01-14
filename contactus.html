@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    
+    <div class="container ">
+
+        <header>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <a href="index.html"><img src="images/facebook_profile_image.png" draggable="true"
+                        ondragstart="drag(event)" id="drag" width="100px" height="125px"
+                        style="margin-left: 5px; margin-top: 10px;"></a>
+            </div>
+
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </header>
+        <br><br>
+
+        <nav class="nav1">
+            <div id="ul-block">
+                <ul id="menu">
+                    <li> <a class="a_special" href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Category</button>
+                            <div class="dropdown-content">
+                                <table>
+                                    <tr>
+                                        <td> <a href="action.html">Action</a></td>
+                                        <td> <a href="adventure.html">Adventure</a></td>
+                                        <td> <a href="animation.html">Animation</a></td>
+                                        <td> <a href="comedy.html">Comedy</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="drama.html">Drama</a></td>
+                                        <td> <a href="fantasy.html">Fantasy</a></td>
+                                        <td> <a href="heist.html">Heist</a></td>
+                                        <td> <a href="horror_fiction.html">Horror fiction</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="mystery.html">Mystery</a></td>
+                                        <td> <a href="romance.html">Romance</a></td>
+                                        <td> <a href="science_fiction.html">Science fiction</a></td>
+                                        <td> <a href="superhero.html">Superhero</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <a href="thriller.html">Thriller</a></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="movies.html">Movies</a></li>
+                    <li> <a href="series.html">TV Shows</a></li>
+                    <li> <a href="news.html">News</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><img src="images/more.png" alt="more" style="height: 50px; width: 50px;" class="more"></button>
+                            <div class="dropdown-content">
+                                <table>
+                                    <tr>
+                                        <td> <a href="action.html">Log<b style="opacity: 0;">_</b>In</a></td>
+                                    </tr> <tr>
+                                        <td> <a href="action.html">Sign<b style="opacity: 0;">_</b>Up</a></td>
+                                    </tr><tr>
+                                        <td> <a href="contactus.html">Contact<b style="opacity: 0;">_</b>us</a></td>
+                                    </tr><tr>
+                                        <td> <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a></td>
+                                    </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        
+        
+        
+        <div class="searchbox">
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input">
+                    <input type="text" placeholder="Search" id="mysearch">
+                </div>
+            </div>
+        </div>
+        
+        </nav>
+
+      <main>
+          <br>
+          <div style="margin-right: 280px; margin-top: -13%;">
+    <form >
+        <section>
+            <div class="contact_us">
+                <div class="contactInfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="images/location.png" alt="location"></span>
+                                <span>
+                                    2912 Meadowbrook<br>Los Angelos, CA<br>90017
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="images/mail.png" alt="location"></span>
+                                <span>
+                                   lorem@ipsum.com
+                                </span>
+                            </li>
+                            <li>
+                                <span><img src="images/call.png" alt="location"></span>
+                                <span>
+                                   049-124-865
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="sci">
+                        <li><a href="#"><img src="images/1.png" alt="1"></a></li>
+                        <li><a href="#"><img src="images/2.png" alt="2"></a></li>
+                        <li><a href="#"><img src="images/3.png" alt="3"></a></li>
+                        <li><a href="#"><img src="images/4.png" alt="4"></a></li>
+                        <li><a href="#"><img src="images/5.png" alt="5"></a></li>
+                    </ul>
+                </div>
+                <div class="contactForm">   
+                <h2>Send a Message</h2>
+                    <div class="fromBox">
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required>
+                            <span>Email Adress</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                        <textarea required></textarea>   
+                         <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </form>
+</div>
+      </main>
+
+        <footer>
+            <p class="font_face">"Online movies" the best free online movies website. </p>
+            <address style="color:rgb(198, 198, 198);"> Owners: Arif Berisha, Albert Grajçevci and Alban Murtezaj -
+                Copyright 2021©</address><br>
+            <a href="mailto:onlinemovies@gmail.com?Subject=Suggestion" target="blank">Suggestions</a>
+            <a style="padding-left: 150px;" href="questionnarie.html" target="_blank">Questionnarie</a>
+        </footer>
+    </div>
+    <script>
+        let progress = document.getElementById("progressbar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + '%';
+        }
+
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')
+         
+        }
+      
+    </script>
+</body>
+
+</html>
